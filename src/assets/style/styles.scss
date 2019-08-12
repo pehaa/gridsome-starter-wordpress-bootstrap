@@ -1,0 +1,104 @@
+//setting custom bootsrap variables
+@import 'custom.scss';
+
+//full bootstrap - all default modules
+//@import 'bootstrap/scss/bootstrap.scss';
+
+//or only selected modules
+@import 'custombootstrap.scss';
+
+//bootstap vue
+@import 'bootstrap-vue/src/index.scss';
+
+
+body {
+  background-image: linear-gradient(0deg, #ddd, #fff 60%);
+  background-attachment: fixed;
+}
+.font-family-headings,
+h1, h2, h3, h4, h5, h6,
+[data-first]:before {
+  font-family: 'Corben', serif;
+  font-variant-ligatures: none;
+  font-weight: bold;
+}
+
+.font-family-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+
+.pagination .active {
+  background: $body-color;
+}
+
+.meta-data,
+.read-more {
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+.read-more {
+  background-image: linear-gradient(100deg, $primary, darken($primary, 10), $primary);
+  background-size: 200% auto;
+  background-position: 0 0;
+  transition: .5s;
+}
+
+.read-more:hover {
+  background-position: 100% 0;
+}
+
+[data-first]:before {
+  content: attr(data-first);
+  font-size: 16rem;
+  position: absolute;
+  color: $primary;
+  opacity: .15;
+  left: -15%;
+  top: 40%;
+  line-height: 1;
+  width: 10rem;
+  text-align: right;
+  pointer-events: none;
+}
+
+ @include media-breakpoint-up(md) {
+  [data-first] {
+    overflow: hidden;
+    border-right: 1px solid $primary;
+  }
+  [data-first]:before {
+    right: 5%;
+    top: 0;
+    left: auto;
+  }   
+}
+
+// possible problems with aligning images in post content
+.post-content,
+.page-content,
+.post-excerpt {
+  audio, canvas, iframe, img, svg, video {
+    max-width: 100%;
+  }
+  img {
+    height: auto;
+  }
+  figure {
+    max-width: 100%;
+  }
+}
+img.alignright {
+  float: right; 
+  margin: 0 0 1rem 1rem;
+}
+img.alignleft {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,38 @@
+$primary: #D62800;
+$body-color: #343a40;
+
+// small buttons
+$btn-padding-y-sm: 0.125rem;
+$btn-padding-x-sm: 0.25rem;
+$btn-font-size-sm: 0.8125rem;
+
+$font-family-sans-serif:
+  Muli,
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+
+$headings-font-weight: 700;
+$navbar-light-active-color: $primary;
+
+$link-hover-color: darken($primary, 10);
+
+
+//pagination
+$pagination-color:                  #ffffff;
+$pagination-bg:                     $primary;
+$pagination-border-color:           #ffffff;
+
+$pagination-hover-color:           #ffffff;
+$pagination-hover-bg:              darken($primary, 15);
+$pagination-hover-border-color:    #ffffff;

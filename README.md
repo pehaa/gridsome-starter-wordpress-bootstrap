@@ -52,7 +52,7 @@ module.exports = {
         },
         createPages: {
           approach: 'include', // include or exclude, default is include
-          list: [] //an array of page slugs to include or exclude, ex. ['about', 'our-team'], default is an empty array
+          list: [] //an array of page slugs to include or exclude, ex. ['about', 'our-team']
         }
       }
     }
@@ -157,6 +157,6 @@ To use other [Google Fonts](https://fonts.google.com/) replace them in `main.js`
 // main.js
 head.link.push({
     rel: 'stylesheet',
-    href: encodeURI('https://fonts.googleapis.com/css?family=Muli:400,400i,700|Corben:700&display=swap')
+    href: encodeURI('https://fonts.googleapis.com/css?family=Corben&display=swap')
 })
 ```

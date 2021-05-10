@@ -11,7 +11,7 @@
     "bootstrap-vue": "^2.0.0-rc.27",
     "camelcase": "^5.3.1",
     "gridsome": "^0.6.7",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "p-map": "^3.0.0",
     "vue": "^2.6.10"
